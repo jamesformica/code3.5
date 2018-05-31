@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+  background-image: url('/concrete-texture.png');
+}
+
+* {
+  box-sizing: border-box;
+}

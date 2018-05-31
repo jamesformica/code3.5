@@ -1,0 +1,30 @@
+.nav {
+  font-size: 0.75rem;
+  background-color: black;
+  padding: 1rem 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 30rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  color: white;
+}
+
+.linkActive {
+  color: aqua;
+}
+
+@media (min-width: 40rem) {
+  .nav {
+    font-size: 1.125rem;
+  }
+}

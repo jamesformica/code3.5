@@ -1,0 +1,33 @@
+:root {
+  --shift: 0.1275rem;
+}
+
+.text {
+  font-weight: bold;
+}
+
+.code {
+  position: relative;
+  font-family: 'Monoton', cursive;
+}
+
+.code_before {
+  position: absolute;
+  top: calc(var(--shift) * -1);
+  left: calc(var(--shift) * -1);
+  color: violet;
+  opacity: 0.6;
+}
+
+.code_middle {
+  position: relative;
+  color: white;
+}
+
+.code_after {
+  position: absolute;
+  top: var(--shift);
+  right: calc(var(--shift) * -1);
+  color: aqua;
+  opacity: 0.4;
+}
