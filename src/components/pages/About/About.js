@@ -1,7 +1,13 @@
 import React from 'react'
+import ReactMarkdown from 'react-markdown'
+
+import Container from '../../Container/Container'
+import content from './about_content'
 
 const About = () => (
-  <h2>ABOUT PAGE</h2>
+  <Container>
+    <ReactMarkdown source={content} />
+  </Container>
 )
 
 export default About
