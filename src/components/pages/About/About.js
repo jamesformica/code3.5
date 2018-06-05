@@ -5,9 +5,11 @@ import Container from '../../Container/Container'
 import content from './about_content'
 
 const About = () => (
-  <Container>
-    <ReactMarkdown source={content} className="md" />
-  </Container>
+  <div>
+    <Container>
+      <ReactMarkdown source={content} className="md" />
+    </Container>
+  </div>
 )
 
 export default About
