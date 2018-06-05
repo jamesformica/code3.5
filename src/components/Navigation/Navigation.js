@@ -18,7 +18,7 @@ const linkClass = (location, to) => {
 }
 
 const Navigation = ({ location }) => (
-  <Sticky>
+  <Sticky innerZ={100}>
     <nav className={styles.nav}>
       <div className={styles.wrapper}>
         {routes.map(r =>
