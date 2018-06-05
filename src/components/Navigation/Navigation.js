@@ -12,20 +12,23 @@ const routes = [
   { to: '/about', display: 'About' },
 ]
 
-const linkClass = (location, to) => {
+const isActive = (location, to) => {
   const path = `/${location.pathname.split('/')[1]}`
-  return path === to ? styles.linkActive : styles.link
+  return path === to
 }
 
-const NavLink = ({ location, route }) => (
-  <Link
-    to={route.to}
-    href="shutting-up-eslint"
-    className={linkClass(location, route.to)}
-  >
-    {route.display}
-  </Link>
+const getLinkClass = (location, to) => (
+  isActive(location, to) ? styles.linkActive : styles.link
 )
+
+const NavLink = ({ location, route }) => {
+  const className = getLinkClass(location, route.to)
+  return (
+    <Link className={className} to={route.to} href="shutting-up-eslint">
+      {route.display}
+    </Link>
+  )
+}
 
 const Navigation = ({ location }) => (
   <Sticky innerZ={100}>
