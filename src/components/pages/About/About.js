@@ -6,7 +6,7 @@ import content from './about_content'
 
 const About = () => (
   <Container>
-    <ReactMarkdown source={content} />
+    <ReactMarkdown source={content} className="md" />
   </Container>
 )
 

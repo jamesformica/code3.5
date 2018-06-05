@@ -1,0 +1,18 @@
+.md h2 {
+  color: deeppink;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.md h2:first-child {
+  margin-top: 0;
+}
+
+.md p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.md a {
+  color: deeppink;
+}
