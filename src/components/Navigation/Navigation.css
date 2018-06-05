@@ -1,34 +1,32 @@
-.sticky {
-  z-index: 100;
-}
-
 .nav {
-  font-size: 0.75rem;
-  background-color: black;
-  padding: 1rem 0.75rem;
+  background-color: white;
+  padding: 1rem;
+  font-size: 0.875rem;
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-.wrapper {
-  width: 80%;
-  max-width: 30rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-end;
 }
 
 .link {
-  color: white;
+  color: black;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .linkActive {
-  color: aqua;
+  composes: link;
+  background: aqua;
+  text-decoration: none;
 }
 
 @media (min-width: 40rem) {
   .nav {
     font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+
+  .link {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }

@@ -30,9 +30,7 @@ const NavLink = ({ location, route }) => (
 const Navigation = ({ location }) => (
   <Sticky innerZ={100}>
     <nav className={styles.nav}>
-      <div className={styles.wrapper}>
-        {routes.map(r => <NavLink location={location} route={r} key={r.to} />)}
-      </div>
+      {routes.map(r => <NavLink location={location} route={r} key={r.to} />)}
     </nav>
   </Sticky>
 )
