@@ -3,9 +3,10 @@ import ReactMarkdown from 'react-markdown'
 
 import Container from '../../Container/Container'
 import content from './about_content'
+import styles from './About.css'
 
 const About = () => (
-  <div>
+  <div className={styles.about}>
     <Container>
       <ReactMarkdown source={content} className="md" />
     </Container>

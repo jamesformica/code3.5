@@ -31,6 +31,7 @@
     "dotenv": "4.0.0",
     "dotenv-expand": "4.2.0",
     "eslint": "4.10.0",
+    "eslint-config-airbnb": "^16.1.0",
     "eslint-config-react-app": "^2.1.0",
     "eslint-loader": "1.9.0",
     "eslint-plugin-flowtype": "2.39.1",
@@ -55,52 +56,15 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
+    "lint": "eslint .",
     "build": "node scripts/build.js && npm run copy",
-    "test": "node scripts/test.js --env=jsdom",
     "copy": "cpx '_redirects' build/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-  },
-  "jest": {
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx,mjs}"
-    ],
-    "setupFiles": [
-      "<rootDir>/config/polyfills.js"
-    ],
-    "testMatch": [
-      "<rootDir>/src/**/__tests__/**/*.{js,jsx,mjs}",
-      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,mjs}"
-    ],
-    "testEnvironment": "node",
-    "testURL": "http://localhost",
-    "transform": {
-      "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest",
-      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
-      "^(?!.*\\.(js|jsx|mjs|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
-    },
-    "transformIgnorePatterns": [
-      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"
-    ],
-    "moduleNameMapper": {
-      "^react-native$": "react-native-web"
-    },
-    "moduleFileExtensions": [
-      "web.js",
-      "js",
-      "json",
-      "web.jsx",
-      "jsx",
-      "node",
-      "mjs"
-    ]
   },
   "babel": {
     "presets": [
       "react-app"
     ]
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   }
 }

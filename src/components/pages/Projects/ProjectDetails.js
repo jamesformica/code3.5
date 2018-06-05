@@ -5,7 +5,7 @@ import styles from './ProjectDetails.css'
 
 const ProjectDetails = ({ project }) => (
   <Container>
-    <div className={styles.hero} style={{ backgroundImage: `url('${project.img}')` }}/>
+    <div className={styles.hero} style={{ backgroundImage: `url('${project.img}')` }} />
     <div className={styles.content}>
       <h2>{project.name}</h2>
       <span role="img" aria-label="">
