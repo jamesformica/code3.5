@@ -21,7 +21,7 @@ class Projects extends Component {
   clearSelected = () => this.setState({ selected: null })
 
   render = () => (
-    <FlipMove className={styles.wrapper} duration={800} staggerDurationBy={100}>
+    <FlipMove className={styles.wrapper} duration={400} staggerDurationBy={100}>
       {this.state.projects.map((p) => p.id === this.state.selected ?
         (
           <div className={styles.fixed} key={`${p.id}-selected`}>

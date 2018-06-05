@@ -1,7 +1,9 @@
 const projects = [
   {
-    name: 'Banana Mania',
-    img: '/projects/banana.jpg'
+    name: "Banana Mania",
+    img: "/projects/banana.jpg",
+    url: "https://jamesformica.github.io/llamarama",
+    description: "The class came together and built this amazing website promiting how fully sick bananas are!"
   },
 ]
 
