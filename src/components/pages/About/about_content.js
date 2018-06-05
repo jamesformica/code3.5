@@ -1,7 +1,7 @@
 export default `
 ## What is code3.5?
 
-In short, code3.5 is a community club that aims to inspire youglings to create their very own websites.
+In short, code3.5 is a community club that aims to inspire younglings to create their very own websites.
 There is a common misconception that to write code you need to be a genius. Well, I am living proof that
 anyone can learn to code!
 
