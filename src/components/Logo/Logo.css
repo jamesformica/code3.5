@@ -3,8 +3,9 @@
 }
 
 .text {
-  font-weight: bold;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
+  font-family: 'Monoton', cursive;
+  font-size: 2rem;
 }
 
 .code {
@@ -12,23 +13,23 @@
   font-family: 'Monoton', cursive;
 }
 
-.code_before {
+.base {
+  position: relative;
+  color: black;
+}
+
+.primary {
   position: absolute;
   top: calc(var(--shift) * -1);
-  left: calc(var(--shift) * -1);
-  color: violet;
-  opacity: 0.6;
-}
-
-.code_middle {
-  position: relative;
-  color: white;
-}
-
-.code_after {
-  position: absolute;
-  top: var(--shift);
-  right: calc(var(--shift) * -1);
+  left: calc(var(--shift) * 1);
   color: aqua;
-  opacity: 0.4;
+  opacity: 0.8;
+}
+
+.secondary {
+  position: absolute;
+  top: calc(var(--shift) * -2);
+  left: calc(var(--shift) * 2);
+  color: violet;
+  opacity: 0.8;
 }
