@@ -3,6 +3,7 @@ import Sticky from 'react-stickynode'
 import { Link } from 'react-router-dom'
 import { withRouter } from 'react-router'
 
+import Logo from '../Logo/Logo'
 import styles from './Navigation.css'
 
 const routes = [
@@ -32,9 +33,12 @@ const NavLink = ({ location, route }) => {
 
 const Navigation = ({ location }) => (
   <Sticky innerZ={100}>
-    <nav className={styles.nav}>
-      {routes.map(r => <NavLink location={location} route={r} key={r.to} />)}
-    </nav>
+    <div className={styles.wrapper}>
+      <Logo />
+      <nav className={styles.nav}>
+        {routes.map(r => <NavLink location={location} route={r} key={r.to} />)}
+      </nav>
+    </div>
   </Sticky>
 )
 

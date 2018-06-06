@@ -1,32 +1,46 @@
+.wrapper {
+  padding: 1.5rem 1.75rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+}
+
 .nav {
   background-color: white;
-  padding: 1rem;
-  font-size: 0.875rem;
-  display: flex;
+  padding-left: 1rem;
+  font-size: 0.75rem;
+  display: inline-flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-around;
+  font-family: 'Raleway', sans-serif;
+  flex-grow: 1;
+  max-width: 25rem;
 }
 
 .link {
   color: black;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.125rem;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
 
 .linkActive {
   composes: link;
-  background: aqua;
+  background: yellow;
+  text-decoration: none;
+}
+
+.linkActive:hover {
   text-decoration: none;
 }
 
 @media (min-width: 40rem) {
   .nav {
     font-size: 1rem;
-    padding: 1rem 2rem;
-  }
-
-  .link {
-    margin-left: 1rem;
-    margin-right: 1rem;
   }
 }

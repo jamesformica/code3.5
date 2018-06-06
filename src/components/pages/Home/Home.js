@@ -1,10 +1,17 @@
 import React, { Fragment } from 'react'
 
+import Container from '../../Container/Container'
 import styles from './Home.css'
 
 const Home = () => (
   <Fragment>
-    <h2>HOME PAGE</h2>
+    <Container>
+      <h2>
+        Putting the &apos;fun&apos;
+      <br />
+        back in funky websites!
+      </h2>
+    </Container>
     <div className={styles.test} />
   </Fragment>
 )
