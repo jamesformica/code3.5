@@ -1,0 +1,6 @@
+.upcoming {
+  grid-area: upcoming;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}

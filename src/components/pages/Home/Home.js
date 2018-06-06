@@ -1,19 +1,15 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
-import Container from '../../Container/Container'
+import Tagline from './components/Tagline/Tagline'
+import Upcoming from './components/Upcoming/Upcoming'
 import styles from './Home.css'
 
 const Home = () => (
-  <Fragment>
-    <Container>
-      <h2>
-        Putting the &apos;fun&apos;
-      <br />
-        back in funky websites!
-      </h2>
-    </Container>
+  <div className={styles.home}>
+    <Tagline />
+    <Upcoming />
     <div className={styles.test} />
-  </Fragment>
+  </div>
 )
 
 export default Home

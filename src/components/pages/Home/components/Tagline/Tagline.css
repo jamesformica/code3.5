@@ -1,0 +1,16 @@
+.tagline {
+  grid-area: tagline;
+}
+
+.tag {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.fun {
+  color: blueviolet;
+}
+
+.quote {
+  font-size: 1.5rem;
+}
