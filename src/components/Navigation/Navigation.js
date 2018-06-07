@@ -7,7 +7,7 @@ import Logo from '../Logo/Logo'
 import styles from './Navigation.css'
 
 const routes = [
-  { to: '/', display: 'Home' },
+  { to: '/', display: 'Home', className: styles.hideSm },
   { to: '/projects', display: 'Projects' },
   { to: '/learn', display: 'Learn' },
   { to: '/about', display: 'About' },
@@ -25,7 +25,7 @@ const getLinkClass = (location, to) => (
 const NavLink = ({ location, route }) => {
   const className = getLinkClass(location, route.to)
   return (
-    <Link className={className} to={route.to} href="shutting-up-eslint">
+    <Link className={`${className} ${route.className}`} to={route.to} href="shutting-up-eslint">
       {route.display}
     </Link>
   )
@@ -34,7 +34,9 @@ const NavLink = ({ location, route }) => {
 const Navigation = ({ location }) => (
   <Sticky innerZ={100}>
     <div className={styles.wrapper}>
-      <Logo />
+      <Link to="/" href="/">
+        <Logo />
+      </Link>
       <nav className={styles.nav}>
         {routes.map(r => <NavLink location={location} route={r} key={r.to} />)}
       </nav>
