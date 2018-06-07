@@ -23,6 +23,16 @@
   cursor: pointer;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+
 .fixed {
   position: fixed;
   top: 2rem;
@@ -53,7 +63,7 @@
   font-size: 1rem;
   font-weight: bold;
   color: white;
-  background: rgba(0, 0, 0, 0.6);
+  background: black;
   border-radius: 1000px;
   padding: 0.25rem 0.5rem;
   border: none;
