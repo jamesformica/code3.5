@@ -1,0 +1,9 @@
+.footer {
+  font-family: 'Raleway', sans-serif;
+  background-color: black;
+  color: white;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
