@@ -11,6 +11,8 @@ const Upcoming = () => (
       <p>Every Saturday</p>
       <b>TIME</b>
       <p>3pm - 4pm</p>
+      <b>COST</b>
+      <p>$0.00 free!</p>
       <b>WHERE</b>
       <p>Code3.5 is run out of the
         <span className={styles.loc}> Orchard Road Community Centre </span>

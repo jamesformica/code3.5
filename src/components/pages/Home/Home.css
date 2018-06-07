@@ -4,6 +4,7 @@
     "tagline"
     "contact"
     "upcoming"
+    "map"
     "logo";
   grid-template-columns: 1fr;
   grid-column-gap: 4rem;
