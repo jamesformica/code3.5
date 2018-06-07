@@ -1,0 +1,11 @@
+.logo {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.logo > div {
+  font-size: 20rem;
+}

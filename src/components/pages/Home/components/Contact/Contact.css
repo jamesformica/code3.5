@@ -1,0 +1,25 @@
+.contact {
+  grid-area: contact;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bg {
+  flex: 0 0 auto;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+.info {
+  font-size: 1.125rem;
+  text-align: center;
+  max-width: 40rem;
+}
+
+.info a {
+  color: blueviolet;
+}

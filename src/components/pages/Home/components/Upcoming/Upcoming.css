@@ -1,6 +1,33 @@
 .upcoming {
   grid-area: upcoming;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  width: 10rem;
+  height: 10rem;
+}
+
+.loc {
+  color: blueviolet;
+  font-weight: bold;
+}
+
+.info {
+  max-width: 30rem;
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.info > p {
+  margin: 0;
+}
+
+.info > b {
+  display: block;
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: darkgrey;
 }
