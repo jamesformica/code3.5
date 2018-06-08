@@ -4,6 +4,9 @@
   "private": true,
   "homepage": "http://code35.club",
   "dependencies": {
+    "camelcase": "^5.0.0",
+    "decamelize": "^2.0.0",
+    "lodash": "^4.17.10",
     "object-assign": "4.1.1",
     "promise": "8.0.1",
     "raf": "3.4.0",
