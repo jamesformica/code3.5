@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 import articles from './Articles'
 
-const Directory = ({ match }) => console.log(articles, match) || (
+const Directory = ({ match }) => (
   <Fragment>
     {keys(articles).map((a) => {
       const decamel = decamelize(a, '-')
