@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ReactMarkdown from 'react-markdown'
-import camelCase from 'camelcase'
+import camelCase from 'lodash/camelCase'
 
 import articles from './Articles'
 
