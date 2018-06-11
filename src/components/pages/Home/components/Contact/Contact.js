@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { Anchor } from '../../../../Link/Link'
 import pic from './me.jpg'
 import styles from './Contact.css'
 
@@ -17,9 +18,9 @@ const Contact = () => (
       <p>
         If this sounds fun to you, your child, or someone you know,
         you can contact me at&nbsp;
-        <a href="mailto:james.formica@gmail.com">james.formica@gmail.com</a>
+        <Anchor href="mailto:james.formica@gmail.com">james.formica@gmail.com</Anchor>
         &nbsp;or on&nbsp;
-        <a href="tel:0404590613">0404590613</a>.
+        <Anchor href="tel:0404590613">0404590613</Anchor>.
       </p>
     </div>
   </div>

@@ -3,3 +3,16 @@
   max-width: 600px;
   margin: 2rem auto;
 }
+
+.title {
+  color: blueviolet;
+}
+
+.list {
+  font-size: 1.25rem;
+  margin-top: 2.5rem;
+}
+
+.li {
+  text-transform: capitalize;
+}

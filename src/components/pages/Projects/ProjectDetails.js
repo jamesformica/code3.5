@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { Anchor } from '../../Link/Link'
 import Container from '../../Container/Container'
 import styles from './ProjectDetails.css'
 
@@ -10,7 +11,7 @@ const ProjectDetails = ({ project }) => (
       <h2>{project.name}</h2>
       <span role="img" aria-label="">
         👉&nbsp;
-        <a href={project.url} target="_blank">Check out the website</a>
+        <Anchor href={project.url} target="_blank">Check out the website</Anchor>
         &nbsp;👈
       </span>
 

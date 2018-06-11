@@ -1,4 +1,3 @@
-export default `
 ## What is code3.5?
 
 In short, code3.5 is a community club that aims to inspire younglings to create their very own websites.
@@ -28,5 +27,3 @@ Nope.
 ## What does code3.5 mean / stand for?
 
 Naming is hard! As you learn to code, you will discover how difficult it can be to name things. Most of the web is now built on 2 standard technologies: CSS3 and HTML5. I grabbed those numbers, put a dot between them and shoved the word 'code' in front! It may not be the most catchy name ever, but it is somewhat relevant :)
-
-`
