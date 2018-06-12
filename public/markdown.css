@@ -1,6 +1,20 @@
-.md h2 {
+.md h1,
+.md h2,
+.md h3 {
   color: blueviolet;
+}
+
+.md h1:first-child {
+  margin-top: 0;
+}
+
+.md h2 {
   margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.md h3 {
+  margin-top: 2.5rem;
   margin-bottom: 1rem;
 }
 
@@ -16,4 +30,18 @@
 
 .md a {
   color: blueviolet;
+}
+
+.md code {
+  background: #f3e9fc;
+  padding: 0.125rem 0.25rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+}
+
+.md pre {
+  background: #f3e9fc;
+  padding: 1rem;
+  overflow: auto;
+  border-left: 0.25rem solid blueviolet;
 }

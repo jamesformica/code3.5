@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import kebabCase from 'lodash/kebabCase'
 import keys from 'lodash/keys'
 import lowerCase from 'lodash/lowerCase'
@@ -19,12 +19,16 @@ const buildLink = (path, article) => {
 }
 
 const Directory = ({ match }) => (
-  <Fragment>
-    <h2>Code3.5 learning marterials</h2>
+  <div className="md">
+    <h1>Code3.5 learning marterials</h1>
+    <p>
+      The following articles contain tutorials, guides,
+      hints and tips to help you become a great coder!
+    </p>
     <ul className={styles.list}>
       {keys(articles).map(a => buildLink(match.path, a))}
     </ul>
-  </Fragment>
+  </div>
 )
 
 export default Directory

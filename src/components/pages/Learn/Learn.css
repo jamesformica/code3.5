@@ -1,11 +1,7 @@
 .learn {
-  width: 80vw;
+  width: 90vw;
   max-width: 600px;
   margin: 2rem auto;
-}
-
-.title {
-  color: blueviolet;
 }
 
 .list {
@@ -15,4 +11,6 @@
 
 .li {
   text-transform: capitalize;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
