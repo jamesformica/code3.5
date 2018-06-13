@@ -45,3 +45,13 @@
   overflow: auto;
   border-left: 0.25rem solid blueviolet;
 }
+
+.md li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.md hr {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}

@@ -29,7 +29,7 @@ class Article extends Component {
   render = () => (
     <Fragment>
       {this.state.article &&
-        <ReactMarkdown source={this.state.article} className="md" />
+        <ReactMarkdown source={this.state.article} className="md" escapeHtml={false} />
       }
 
       {this.state.notFound &&
