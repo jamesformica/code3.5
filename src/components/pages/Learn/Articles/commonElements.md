@@ -1,5 +1,3 @@
-# Common Elements
-
 I've put together a list of common elements that will come in handy when building your website. For further information you can Google the name of the element and you will find a lot of good resources.
 
 # h1
@@ -90,6 +88,16 @@ I've put together a list of common elements that will come in handy when buildin
 
 ---
 
+# img
+
+`<img src="/favicon.png" />`
+
+<img src="/favicon.png" />
+
+>The `<img>` displays an image on your website so you'll definitely want to remember this one! It is a self-closing element and the URL is provided by the `src` attribute.
+
+---
+
 # button
 
 `<button>You can click me!</button>`
@@ -97,6 +105,8 @@ I've put together a list of common elements that will come in handy when buildin
 <button>You can click me!</button>
 
 >The `<button>` element does exactly what it sounds like it does. It puts a button on your website! This button won't do anything at the moment but this is how you make one.
+
+*Note: you can also make a button using the `input` element as shown below...*
 
 ---
 
@@ -151,4 +161,4 @@ I've put together a list of common elements that will come in handy when buildin
 <input type="file" />
 
 
->The `<input>` element...
+>The `<input>` element... I've saved this one for last because it is one of the most complicated elements. As you can see the `input` element changes depending on the `type` attribute. You will also notice that this element is self-closing and does not have an close tag. The best way to find out about a specific input type is to Google it and do some quick reading.

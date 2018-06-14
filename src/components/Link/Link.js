@@ -3,8 +3,8 @@ import { Link as RLink } from 'react-router-dom'
 
 import styles from './Link.css'
 
-const Link = props => (
-  <RLink className={styles.link} {...props} />
+const Link = ({ className, ...rest }) => (
+  <RLink className={`${styles.link} ${className}`} {...rest} />
 )
 
 export const Anchor = props => (

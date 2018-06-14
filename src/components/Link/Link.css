@@ -1,8 +1,9 @@
 .link {
   color: blueviolet;
+  text-decoration: none;
 }
 
 .link:hover,
 .link:active {
-  color: violet;
+  text-decoration: underline;
 }

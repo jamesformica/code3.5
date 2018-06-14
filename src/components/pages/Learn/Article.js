@@ -1,10 +1,12 @@
 import React, { Component, Fragment } from 'react'
 import ReactMarkdown from 'react-markdown'
 import camelCase from 'lodash/camelCase'
-import { Link } from 'react-router-dom'
 
-import { fetchMarkdown } from '../../../helpers/markdownHelper'
+import Link from '../../Link/Link'
 import articles from './Articles'
+import { fetchMarkdown } from '../../../helpers/markdownHelper'
+
+import styles from './Learn.css'
 
 class Article extends Component {
   constructor() {
@@ -28,6 +30,8 @@ class Article extends Component {
 
   render = () => (
     <Fragment>
+      <Link className={styles.back} to="/learn" href="learn">&lt;&lt;&lt; Back</Link>
+
       {this.state.article &&
         <ReactMarkdown source={this.state.article} className="md" escapeHtml={false} />
       }
