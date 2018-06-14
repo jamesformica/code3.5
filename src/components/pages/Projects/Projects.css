@@ -17,6 +17,7 @@
   position: relative;
   height: 16rem;
   outline: none;
+  border: none;
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -29,20 +30,22 @@
   left: 0;
   right: 0;
   bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 999;
 }
 
-.fixed {
+.grande {
   position: fixed;
-  top: 2rem;
-  left: 50%;
-  width: 80vw;
-  max-width: 40rem;
-  max-height: 80vh;
-  overflow: auto;
-  transform: translateX(-50%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 1000;
+  display: flex;
+  justify-content: center;
 }
 
 .name {
@@ -54,24 +57,6 @@
   color: white;
   font-size: 1rem;
   padding: 0.25rem 0.5rem;
-}
-
-.close {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 1rem;
-  font-weight: bold;
-  color: white;
-  background: black;
-  border-radius: 1000px;
-  padding: 0.25rem 0.5rem;
-  border: none;
-  cursor: pointer;
-}
-
-.close:hover {
-  background: black;
 }
 
 @media (min-width: 30rem) {

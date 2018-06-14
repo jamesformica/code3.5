@@ -1,3 +1,31 @@
+.details {
+  position: relative;
+  margin-top: 2rem;
+  width: 80vw;
+  max-width: 40rem;
+  max-height: 80vh;
+  overflow: auto;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background: black;
+  border-bottom-left-radius: 10px;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.close:hover {
+  background: black;
+}
+
 .hero {
   margin-top: -1.5rem;
   margin-left: -1.5rem;
@@ -10,4 +38,44 @@
 
 .content {
   margin-top: 1rem;
+}
+
+.title {
+  color: blueviolet;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  font-family: 'Raleway', sans-serif;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.primary {
+  composes: button;
+  background-color: blueviolet;
+  color: white;
+}
+
+.secondary {
+  composes: button;
+  border: 0.125rem solid blueviolet;
+  color: blueviolet;
+}
+
+@media (min-width: 30rem) {
+  .buttons {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
