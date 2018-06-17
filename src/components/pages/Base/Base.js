@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 
 import Navigation from '../../Navigation/Navigation'
 import Footer from '../../Footer/Footer'
@@ -15,10 +15,13 @@ const Base = () => (
       <Navigation />
 
       <div className={styles.content}>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/learn" component={Learn} />
-        <Route path="/projects" component={Projects} />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/learn" component={Learn} />
+          <Route path="/projects" component={Projects} />
+          <Redirect to="/" />
+        </Switch>
       </div>
 
       <Footer />

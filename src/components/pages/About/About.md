@@ -4,13 +4,17 @@ In short, code3.5 is a community club that aims to inspire younglings to create 
 There is a common misconception that to write code you need to be a genius. Well, I am living proof that
 anyone can learn to code!
 
+## Who is it for?
+
+This class is perfect for **9 - 14** year olds who ideally have zero experience building websites. Writing code is for everyone so I encourage girls and boys to have a go!
+
 ## Where is code3.5?
 
 Currently the only location that code3.5 is running is in a Melbourne north-east suburb called Doreen. It is being run out of the Orchard Road Community Centre which is at: **Orchard Rd & Patience Ave, Doreen VIC 3754**.
 
 ## How much does it cost?
 
-$0.00! code3.5 is absolutely free and I intend to keep it that way for as long as possible.
+$5.00 per session. My aim is to help kids learn, not to make an enormous profit, this will just help cover the costs of hiring the room.
 
 ## Who am I?
 

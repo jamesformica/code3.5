@@ -1,0 +1,83 @@
+.loader {
+  display: flex;
+  justify-content: center;
+}
+
+.bar {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.125rem;
+  margin-right: 0.125rem;
+  border-radius: 50%;
+  opacity: 0.5;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.bar1 {
+  composes: bar;
+  background: blueviolet;
+  animation-name: bar1;
+}
+
+.bar2 {
+  composes: bar;
+  background: aqua;
+  animation-name: bar2;
+}
+
+.bar3 {
+  composes: bar;
+  background: yellow;
+  animation-name: bar3;
+}
+
+@keyframes bar1 {
+  0% {
+    transform: scale(1);
+  }
+
+  33% {
+    transform: scale(2.5);
+  }
+
+  90% {
+    transform: scale(2.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bar2 {
+  0% {
+    transform: scale(1);
+  }
+
+  66% {
+    transform: scale(2.5);
+  }
+
+  90% {
+    transform: scale(2.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bar3 {
+  0% {
+    transform: scale(1);
+  }
+
+  90% {
+    transform: scale(2.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

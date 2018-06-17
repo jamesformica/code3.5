@@ -3,6 +3,7 @@ import ReactMarkdown from 'react-markdown'
 import camelCase from 'lodash/camelCase'
 
 import Link from '../../Link/Link'
+import Loader from '../../Loader/Loader'
 import articles from './Articles'
 import { fetchMarkdown } from '../../../helpers/markdownHelper'
 
@@ -32,8 +33,9 @@ class Article extends Component {
     <Fragment>
       <Link className={styles.back} to="/learn" href="learn">&lt;&lt;&lt; Back</Link>
 
-      {this.state.article &&
-        <ReactMarkdown source={this.state.article} className="md" escapeHtml={false} />
+      {this.state.article
+        ? <ReactMarkdown source={this.state.article} className="md" escapeHtml={false} />
+        : <Loader />
       }
 
       {this.state.notFound &&

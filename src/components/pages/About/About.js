@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import ReactMarkdown from 'react-markdown'
 
-import Container from '../../Container/Container'
 import { fetchMarkdown } from '../../../helpers/markdownHelper'
+import Container from '../../Container/Container'
+import Loader from '../../Loader/Loader'
 import url from './About.md'
 import styles from './About.css'
 
@@ -20,7 +21,10 @@ class About extends Component {
 
   render = () => (
     <Container className={styles.about}>
-      <ReactMarkdown source={this.state.about} className="md" />
+      {this.state.about
+        ? <ReactMarkdown source={this.state.about} className="md" />
+        : <Loader />
+      }
     </Container>
   )
 }
