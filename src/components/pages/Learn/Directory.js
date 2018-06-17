@@ -20,7 +20,7 @@ const buildLink = (path, article) => {
 
 const Directory = ({ match }) => (
   <div className="md">
-    <h1>Code3.5 learning marterials</h1>
+    <h1>Code3.5 self learning materials</h1>
     <p>
       The following articles contain tutorials, guides,
       hints and tips to help you become a great coder!
