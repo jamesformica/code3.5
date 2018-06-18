@@ -25,6 +25,11 @@
   cursor: pointer;
 }
 
+.bgProject {
+  composes: project;
+  filter: blur(4px);
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -47,6 +52,7 @@
   z-index: 1000;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .name {

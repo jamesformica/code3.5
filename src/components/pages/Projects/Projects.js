@@ -5,16 +5,19 @@ import ProjectDetails from './ProjectDetails'
 import projects from '../../../_projects'
 import styles from './Projects.css'
 
-const Overlay = ({ isOpen, clearSelected }) => (
-  isOpen ? (
-    <div
-      tabIndex="0"
-      role="button"
-      className={styles.overlay}
-      onClick={clearSelected}
-      onKeyDown={clearSelected}
-    />
-  ) : null
+const ProjectCards = ({ projects: pros, isSelected, onClick }) => (
+  <div className={styles.wrapper}>
+    {pros.map(p => (
+      <button
+        key={p.id}
+        className={isSelected ? styles.bgProject : styles.project}
+        style={{ backgroundImage: `url('${p.img}')` }}
+        onClick={() => onClick(p.id)}
+      >
+        <span className={styles.name}>{p.name}</span>
+      </button>
+    ))}
+  </div>
 )
 
 class Projects extends Component {
@@ -39,20 +42,13 @@ class Projects extends Component {
 
     return (
       <Fragment>
-        <Overlay isOpen={isSelected} clearSelected={this.clearSelected} />
+        {isSelected && <div className={styles.overlay} />}
 
-        <div className={styles.wrapper}>
-          {this.state.projects.map(p => (
-            <button
-              key={p.id}
-              className={styles.project}
-              style={{ backgroundImage: `url('${p.img}')` }}
-              onClick={() => this.setSelected(p.id)}
-            >
-              <span className={styles.name}>{p.name}</span>
-            </button>
-          ))}
-        </div>
+        <ProjectCards
+          projects={this.state.projects}
+          isSelected={isSelected}
+          onClick={this.setSelected}
+        />
 
         <FlipMove duration={400} staggerDurationBy={100}>
           {isSelected &&
@@ -61,7 +57,7 @@ class Projects extends Component {
             </div>
           }
         </FlipMove>
-      </Fragment>
+      </Fragment >
     )
   }
 }

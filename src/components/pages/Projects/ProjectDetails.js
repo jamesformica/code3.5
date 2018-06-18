@@ -1,11 +1,12 @@
 import React from 'react'
 
 import { Anchor } from '../../Link/Link'
+import OutsideClickHandler from '../../OutsideClickHandler/OutsideClickHandler'
 import Container from '../../Container/Container'
 import styles from './ProjectDetails.css'
 
 const ProjectDetails = ({ project, onClose }) => (
-  <div className={styles.details}>
+  <OutsideClickHandler className={styles.details} onOutsideClick={onClose}>
     <button className={styles.close} onClick={onClose}>x</button>
 
     <Container>
@@ -25,7 +26,7 @@ const ProjectDetails = ({ project, onClose }) => (
         </div>
       </div>
     </Container>
-  </div>
+  </OutsideClickHandler>
 )
 
 export default ProjectDetails

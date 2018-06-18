@@ -1,7 +1,7 @@
 .details {
   position: relative;
   margin-top: 2rem;
-  width: 80vw;
+  width: 100vw;
   max-width: 40rem;
   max-height: 80vh;
   overflow: auto;
@@ -17,6 +17,7 @@
   color: white;
   background: black;
   border-bottom-left-radius: 10px;
+  border-top-right-radius: 3px;
   padding: 0.5rem 1rem;
   border: none;
   cursor: pointer;
