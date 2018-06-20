@@ -20,6 +20,10 @@ $5.00 per session. My aim is to help kids learn, not to make an enormous profit,
 
 Hi there! I'm James Formica, I'm a software developer currently working at [realestate.com.au](http://www.realestate.com.au). I'm technically a UI Developer which pretty much means I specialise in making the website look good and behave well.
 
+## Do I have a working with childrens check?
+
+Yep, I sure do!
+
 ## Why do this?
 
 I remember learning to code at the beginning and I also remember it being rather boring until I could build my own stuff. My goal is to run fun and interactive sessions where the whole class builds the website together and decides on the finished product.

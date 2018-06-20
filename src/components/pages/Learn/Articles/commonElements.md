@@ -6,7 +6,7 @@ I've put together a list of common elements that will come in handy when buildin
 
 <h1>Heading 1</h1>
 
->The `<h1>` element is usually used as the big title on your site. There also exists `<h2>` all the way to `<h6>` and the higher the number, the smaller the heading gets.
+>The `<h1>` element is usually used as the big title on your site. There also exists `<h2>` all the way to `<h6>` and the higher the number, the **smaller** the heading gets.
 
 ---
 
@@ -28,7 +28,7 @@ I've put together a list of common elements that will come in handy when buildin
 <span>this is some text!!!</span>
 <span>And here is some more, look, they are next to each other</span>
 
->The `<span>` element is used again for normal text, however the next element will sit right next to it. Unlike the paragraph element is does not sure that there is a new line after it.
+>The `<span>` element is used again for normal text, however the next element will sit right next to it. Unlike the paragraph element, it does not put a new line after it.
 
 ---
 

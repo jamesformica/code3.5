@@ -35,7 +35,7 @@ const Navigation = ({ location }) => (
   <Sticky innerZ={100}>
     <div className={styles.wrapper}>
       <Link to="/" href="/">
-        <Logo />
+        <Logo fontSize={48} />
       </Link>
       <nav className={styles.nav}>
         {routes.map(r => <NavLink location={location} route={r} key={r.to} />)}

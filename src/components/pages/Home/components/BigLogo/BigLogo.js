@@ -5,7 +5,7 @@ import styles from './BigLogo.css'
 
 const BigLogo = () => (
   <div className={styles.logo}>
-    <Logo />
+    <Logo fontSize={160} />
   </div>
 )
 

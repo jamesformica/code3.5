@@ -1,17 +1,7 @@
 .logo {
   grid-area: logo;
+  margin-top: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-}
-
-.logo > div {
-  font-size: 10rem;
-}
-
-@media (min-width: 40rem) {
-  .logo > div {
-    font-size: 20rem;
-  }
 }

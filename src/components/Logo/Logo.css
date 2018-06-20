@@ -1,17 +1,11 @@
 @import "variables.css";
 
-:root {
-  --shift: 0.275rem;
-}
-
 .logo {
   position: relative;
   display: inline-block;
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
-  font-size: 3rem;
   white-space: nowrap;
-  overflow: visible;
 }
 
 .base {
@@ -22,24 +16,18 @@
 
 .primary {
   position: absolute;
-  top: calc(var(--shift) * -1);
-  left: calc(var(--shift) * 1);
   color: var(--aqua);
   opacity: 0.8;
 }
 
 .secondary {
   position: absolute;
-  top: calc(var(--shift) * -2);
-  left: calc(var(--shift) * 2);
   color: violet;
   opacity: 0.8;
 }
 
 .tertiary {
   position: absolute;
-  top: calc(var(--shift) * -3);
-  left: calc(var(--shift) * 3);
   color: yellow;
   opacity: 1;
 }
