@@ -12,13 +12,13 @@ const Contact = () => (
       <p>I&apos;m a software developer and I want to help you learn to create websites!</p>
       <p>
         I run a small code club in Melbourne&apos;s north-east
-        for kids between the ages of 10-16 where the goal is to
+        for kids between the ages of 9-13 where the goal is to
         create, learn, and most importantly, have fun!
       </p>
       <p>
         If this sounds fun to you, your child, or someone you know,
         you can contact me at&nbsp;
-        <Anchor href="mailto:james.formica@gmail.com">james.formica@gmail.com</Anchor>
+        <Anchor href="mailto:code35club@gmail.com">code35club@gmail.com</Anchor>
         &nbsp;or on&nbsp;
         <Anchor href="tel:0404590613">0404590613</Anchor>.
       </p>
