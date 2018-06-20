@@ -6,6 +6,7 @@
 
 .md h1:first-child {
   margin-top: 0;
+  text-transform: capitalize;
 }
 
 .md h2 {

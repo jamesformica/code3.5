@@ -1,4 +1,4 @@
-# All about elements
+# All About Elements
 
 Welcome to All About Elements, your one stop guide to understanding what an element is and how to use them.
 
