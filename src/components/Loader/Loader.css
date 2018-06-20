@@ -1,3 +1,5 @@
+@import "variables.css";
+
 .loader {
   display: flex;
   justify-content: center;
@@ -16,13 +18,13 @@
 
 .bar1 {
   composes: bar;
-  background: blueviolet;
+  background: var(--blue-violet);
   animation-name: bar1;
 }
 
 .bar2 {
   composes: bar;
-  background: aqua;
+  background: var(--aqua);
   animation-name: bar2;
 }
 

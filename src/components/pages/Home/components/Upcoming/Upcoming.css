@@ -1,3 +1,5 @@
+@import "variables.css";
+
 .upcoming {
   grid-area: upcoming;
   display: flex;
@@ -11,7 +13,7 @@
 }
 
 .loc {
-  color: blueviolet;
+  color: var(--blue-violet);
   font-weight: bold;
 }
 

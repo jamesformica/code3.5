@@ -1,3 +1,5 @@
+@import "variables.css";
+
 :root {
   --shift: 0.275rem;
 }
@@ -14,7 +16,7 @@
 
 .base {
   position: relative;
-  color: blueviolet;
+  color: var(--blue-violet);
   opacity: 0.8;
 }
 
@@ -22,7 +24,7 @@
   position: absolute;
   top: calc(var(--shift) * -1);
   left: calc(var(--shift) * 1);
-  color: aqua;
+  color: var(--aqua);
   opacity: 0.8;
 }
 

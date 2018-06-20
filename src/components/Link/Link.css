@@ -1,5 +1,7 @@
+@import "variables.css";
+
 .link {
-  color: blueviolet;
+  color: var(--blue-violet);
   text-decoration: none;
 }
 

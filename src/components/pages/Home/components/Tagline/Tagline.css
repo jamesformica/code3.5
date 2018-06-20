@@ -1,3 +1,5 @@
+@import "variables.css";
+
 .tagline {
   grid-area: tagline;
 }
@@ -8,7 +10,7 @@
 }
 
 .fun {
-  color: blueviolet;
+  color: var(--blue-violet);
 }
 
 .quote {

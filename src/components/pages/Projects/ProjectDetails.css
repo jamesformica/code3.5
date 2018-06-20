@@ -1,3 +1,5 @@
+@import "variables.css";
+
 .details {
   position: relative;
   margin-top: 2rem;
@@ -43,7 +45,7 @@
 }
 
 .title {
-  color: blueviolet;
+  color: var(--blue-violet);
 }
 
 .buttons {
@@ -65,14 +67,14 @@
 
 .primary {
   composes: button;
-  background-color: blueviolet;
+  background-color: var(--blue-violet);
   color: white;
 }
 
 .secondary {
   composes: button;
-  border: 0.125rem solid blueviolet;
-  color: blueviolet;
+  border: 0.125rem solid var(--blue-violet);
+  color: var(--blue-violet);
 }
 
 @media (min-width: 30rem) {
